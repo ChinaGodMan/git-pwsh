@@ -17,8 +17,8 @@ if (-not $hasChanges) {
 if (-not $messageFilePath) {
     $messageFilePath = "$rootDrive\1.txt"
 }
-$keyID = "30F74B7781A8D595" 
-$privateKeyPath = "$rootDrive\GitHub\ChinaGodMan-私钥.asc"
+$keyID = "88888888888888888" 
+$privateKeyPath = "$rootDrive\GitHub\88888888888888888.asc"
 $secretKey = gpg2 --list-secret-keys $keyID 2>&1
 if ($secretKey -like "*@gmail.com*") {
     #Write-Host "私钥 $keyID 已存在。"
