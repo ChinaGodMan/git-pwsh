@@ -1,0 +1,1 @@
+chrome.exe "https://github.com/login/device"
