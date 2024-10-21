@@ -5,3 +5,4 @@ launch.json
 *.txt
 node_modules/
 .eslintcache
+.messages
