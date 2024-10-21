@@ -6,3 +6,4 @@ launch.json
 node_modules/
 .eslintcache
 .messages
+.codewait

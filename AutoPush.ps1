@@ -35,6 +35,23 @@ if (-not $messageFilePath) {
 if (-not (Test-Path $messageFilePath)) {
 	$default | Out-File -FilePath $messageFilePath -Encoding UTF8
 }
+$type = ""
+$wait = (Get-Location).Path + "\.codewait"
+if (Test-Path ($wait)) {
+	Show-PathsTable
+	$userInput = Read-Host "设置此次提交类型:"
+	if (-not [string]::IsNullOrWhiteSpace($userInput)) {
+		$type = Get-PathByIndex -Index $userInput
+		if ($type -ne $null) {
+			Write-Output "此次使用:$type"
+		} else {
+			Write-Output "空$type"
+		}
+	} else {
+		Write-Output "输入不能为空。"
+	}
+	code --wait $messageFilePath
+}
 $currentDateTime = Get-Date -Format "yyyy/M/d HH:mm:ss"
 $result = Set-FileMd5Record -FilePath $messageFilePath
 if ($result -eq $true) {

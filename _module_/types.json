@@ -1,0 +1,88 @@
+{
+    "operatelist": [
+        {
+            "operate": {
+                "path": "feat:",
+                "info": "新增功能",
+                "infoColor": "\u001b[32m"
+            }
+        },
+        {
+            "operate": {
+                "path": "fix:",
+                "info": "修复 Bug",
+                "infoColor": "\u001b[32m"
+            }
+        },
+        {
+            "operate": {
+                "path": "docs:",
+                "info": "文档变更（如修改 README、注释等）。",
+                "infoColor": "\u001b[32m"
+            }
+        },
+        {
+            "operate": {
+                "path": "style:",
+                "info": "代码格式（不影响代码逻辑的修改，如空格、格式化等）。",
+                "infoColor": "\u001b[32m"
+            }
+        },
+        {
+            "operate": {
+                "path": "refactor",
+                "info": "代码重构（既不是新增功能也不是修复 Bug 的代码修改）。",
+                "infoColor": "\u001b[32m"
+            }
+        },
+        {
+            "operate": {
+                "path": "perf:",
+                "info": "性能优化。",
+                "infoColor": "\u001b[32m"
+            }
+        },
+        {
+            "operate": {
+                "path": "test:",
+                "info": "增加或修改测试用例。",
+                "infoColor": "\u001b[38;2;255;165;0m"
+            }
+        },
+        {
+            "operate": {
+                "path": "chore:",
+                "info": "构建过程或辅助工具的变动（不影响源代码和测试文件的修改）。",
+                "infoColor": "\u001b[38;2;255;165;0m"
+            }
+        },
+        {
+            "operate": {
+                "path": "build:",
+                "info": "构建系统或外部依赖的变更（如升级 npm 包、修改 webpack 配置等）。",
+                "infoColor": "\u001b[38;2;255;165;0m"
+            }
+        },
+        {
+            "operate": {
+                "path": "ci:",
+                "info": "U持续集成相关的更改（如修改 CI 配置文件、脚本等）。",
+                "infoColor": "\u001b[38;2;255;165;0m"
+            }
+        },
+        {
+            "operate": {
+                "path": "revert:",
+                "info": "回滚之前的提交。",
+                "infoColor": "\u001b[38;2;255;165;0m"
+            }
+        },
+        {
+            "operate": {
+                "path": "merge:",
+                "info": "分支合并相关的提交。",
+                "infoColor": "\u001b[38;2;255;165;0m"
+            }
+        }
+    ]
+}
